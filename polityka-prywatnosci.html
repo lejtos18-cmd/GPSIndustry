@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności – GPS Industry</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b2430; --muted:#5a6675; --accent:#1f6feb; --line:#dde3ea; --mark:#fff3bf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e141b; --fg:#e6edf3; --muted:#9aa7b4; --accent:#58a6ff; --line:#27313d; --mark:#5c4b00; }
+  }
+  body { background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin:0; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.25rem; margin:2rem 0 .4rem; padding-top:1rem; border-top:1px solid var(--line); }
+  p, li { margin:.4rem 0; }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  mark { background:var(--mark); color:inherit; padding:0 .25em; border-radius:3px; }
+  table { border-collapse:collapse; width:100%; margin:.6rem 0; font-size:.95rem; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:rgba(127,127,127,.12); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Polityka prywatności – GPS Industry</h1>
+<p class="muted">Obowiązuje od: 18 października 2026 r. • Wersja gry: 0.4 Alpha • Pakiet Android: <code>com.vibeadventuregames.gpsindustry</code></p>
+
+<h2>1. Kto jest administratorem</h2>
+<p>Administratorem w rozumieniu RODO jest: <mark>[imię i nazwisko / nazwa firmy]</mark>, <mark>[adres]</mark>
+(dalej „Wydawca”). Kontakt w sprawach prywatności: <mark>[adres e-mail]</mark>.</p>
+<p>Gra „GPS Industry” (dalej „Gra”) jest grą strategiczną na telefony z Androidem, w której pozycja
+gracza w prawdziwym świecie odkrywa mapę, a gracz buduje bazę, kopalnie i fabryki.</p>
+
+<h2>2. Najważniejsze w skrócie</h2>
+<ul>
+  <li>Gra <strong>nie wymaga konta</strong>, nie prosi o imię, e-mail ani numer telefonu.</li>
+  <li>Twoja <strong>lokalizacja jest używana tylko na urządzeniu</strong>, aby grać. Wydawca nie wysyła jej na własny serwer.</li>
+  <li>Postęp gry jest zapisany <strong>wyłącznie w pamięci Twojego telefonu</strong>. Gra nie ma zapisu w chmurze.</li>
+  <li>Gra wyświetla <strong>reklamy Google AdMob</strong>. Reklamodawca i Google mogą przetwarzać identyfikator reklamowy i inne dane urządzenia (opis w pkt 5).</li>
+  <li>Mapa pochodzi z <strong>OpenStreetMap</strong>. Pobieranie kafelków mapy ujawnia ich serwerowi Twój adres IP (pkt 6).</li>
+</ul>
+
+<h2>3. Jakie dane i po co</h2>
+<table>
+  <tr><th>Dane</th><th>Cel</th><th>Gdzie trafiają</th></tr>
+  <tr>
+    <td>Dokładna i przybliżona lokalizacja (GPS, sieć)</td>
+    <td>Pokazanie pozycji gracza na mapie, odkrywanie terenu, stawianie bazy, misje GPS, ocena prędkości ruchu</td>
+    <td>Przetwarzane na telefonie. Odkryte obszary i pozycja bazy zapisują się w pliku zapisu na urządzeniu.</td>
+  </tr>
+  <tr>
+    <td>Postęp w grze (poziom, surowce, budynki, ustawienia, wybór stylu mapy)</td>
+    <td>Zapis i wczytanie gry, w tym naliczenie postępu po zamknięciu aplikacji</td>
+    <td>Pliki w prywatnej pamięci aplikacji na telefonie (także kopia zapasowa pliku zapisu).</td>
+  </tr>
+  <tr>
+    <td>Kafelki mapy (pamięć podręczna)</td>
+    <td>Szybsze wyświetlanie mapy i mniejsze zużycie transferu</td>
+    <td>Katalog pamięci podręcznej aplikacji na telefonie (limit ok. 192 MB).</td>
+  </tr>
+  <tr>
+    <td>Identyfikator reklamowy, adres IP, informacje o urządzeniu i aplikacji, dane o wyświetleniach i kliknięciach reklam, zgody na reklamy</td>
+    <td>Wyświetlanie i rozliczanie reklam, zapobieganie nadużyciom, zarządzanie zgodami</td>
+    <td>Google (AdMob, Google Mobile Ads SDK, User Messaging Platform) i partnerzy reklamowi Google.</td>
+  </tr>
+  <tr>
+    <td>Adres IP i współrzędne kafelków mapy, które pobiera Twoja gra</td>
+    <td>Pobranie obrazu mapy</td>
+    <td>Serwery OpenStreetMap (tile.openstreetmap.org).</td>
+  </tr>
+</table>
+<p>Wydawca <strong>nie prowadzi własnych serwerów</strong> zbierających dane graczy, nie sprzedaje danych i nie
+buduje na ich podstawie profili.</p>
+
+<h2>4. Lokalizacja</h2>
+<ul>
+  <li>Gra prosi o uprawnienia <em>ACCESS_FINE_LOCATION</em> i <em>ACCESS_COARSE_LOCATION</em>. Używa lokalizacji tylko wtedy, gdy gra jest uruchomiona i na pierwszym planie; <strong>nie śledzi pozycji w tle</strong>.</li>
+  <li>Możesz w każdej chwili cofnąć zgodę w ustawieniach Androida (Aplikacje → GPS Industry → Uprawnienia). Bez lokalizacji gra nie działa w pełni, ponieważ eksploracja opiera się na pozycji.</li>
+  <li>Gra ignoruje ruch szybszy niż 25 km/h przy naliczaniu doświadczenia i przerywa misję drona w pojeździe. Odbywa się to lokalnie na telefonie.</li>
+</ul>
+
+<h2>5. Reklamy (Google AdMob)</h2>
+<p>Gra korzysta z reklam banerowych i reklam z nagrodą (np. za tokeny w sklepie), dostarczanych przez
+Google AdMob. Aby je wyświetlać, Google Mobile Ads SDK może zbierać i przetwarzać między innymi: identyfikator
+reklamowy Androida, adres IP, dane o urządzeniu (model, system, język, sieć), informacje o aplikacji oraz dane o
+interakcji z reklamami. Gra deklaruje uprawnienie <em>AD_ID</em> (dostęp do identyfikatora reklamowego).</p>
+<ul>
+  <li>W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii przy pierwszym uruchomieniu wyświetla się
+      okno zgody (Google User Messaging Platform). Możesz zgodzić się, odmówić lub zmienić decyzję później, o ile
+      okno zgody jest dla Ciebie dostępne.</li>
+  <li>Możesz zresetować lub usunąć identyfikator reklamowy oraz wyłączyć personalizację reklam w ustawieniach
+      Androida (Ustawienia Google → Reklamy).</li>
+  <li>Szczegóły przetwarzania przez Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
+      oraz <a href="https://policies.google.com/technologies/partner-sites">sposób, w jaki Google wykorzystuje dane z witryn i aplikacji partnerów</a>.</li>
+</ul>
+<p>Zasady reklam: Wydawca zakazuje samodzielnego klikania w reklamy w grze, a nagroda (tokeny, bonusy) jest
+przyznawana dopiero po obejrzeniu reklamy z nagrodą do końca.</p>
+
+<h2>6. Mapa (OpenStreetMap)</h2>
+<p>Gra pobiera kafelki mapy z serwera <code>tile.openstreetmap.org</code>. W żądaniu serwer widzi Twój adres IP,
+dane techniczne przeglądarki/aplikacji oraz numery kafelków, które dotyczą oglądanego obszaru. Zasady
+OpenStreetMap Foundation: <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>.
+Dane mapowe: © współtwórcy OpenStreetMap, licencja ODbL.</p>
+
+<h2>7. Podstawy prawne (RODO)</h2>
+<ul>
+  <li>lokalizacja w grze: Twoja zgoda (uprawnienie systemowe) oraz konieczność wykonania usługi – gra bez pozycji nie działa (art. 6 ust. 1 lit. a i b RODO);</li>
+  <li>reklamy i identyfikator reklamowy: Twoja zgoda (art. 6 ust. 1 lit. a RODO), w tym przez okno zgody UMP;</li>
+  <li>pozostałe dane techniczne potrzebne do działania mapy: prawnie uzasadniony interes w zapewnieniu działania gry (art. 6 ust. 1 lit. f RODO).</li>
+</ul>
+
+<h2>8. Przechowywanie i usuwanie danych</h2>
+<ul>
+  <li>Dane zapisu gry i pamięć podręczna mapy są w pamięci Twojego telefonu. Usuniesz je, odinstalowując Grę albo
+      czyszcząc dane aplikacji (Ustawienia Androida → Aplikacje → GPS Industry → Pamięć → Wyczyść dane).</li>
+  <li>Dane przetwarzane przez Google i OpenStreetMap są przechowywane zgodnie z ich politykami. Wydawca nie ma
+      nad nimi kontroli.</li>
+  <li>Kopie zapasowe Androida (np. Google One) mogą obejmować pliki aplikacji, zależnie od ustawień Twojego telefonu.</li>
+</ul>
+
+<h2>9. Twoje prawa</h2>
+<p>Zgodnie z RODO masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania,
+przenoszenia, sprzeciwu oraz cofnięcia zgody w każdym momencie (bez wpływu na zgodność z prawem
+przetwarzania sprzed cofnięcia). Masz też prawo wnieść skargę do organu nadzorczego – w Polsce do Prezesa
+Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).
+Ponieważ Wydawca nie przechowuje danych graczy na własnych serwerach, większość tych praw realizujesz samodzielnie
+na telefonie (pkt 4, 5 i 8); w pozostałych sprawach napisz na adres z pkt 1.</p>
+
+<h2>10. Dzieci</h2>
+<p>Gra nie jest skierowana do dzieci poniżej 13 lat i Wydawca nie zbiera świadomie danych dzieci. Jeśli uważasz, że
+dziecko przekazało dane, skontaktuj się z nami (pkt 1).</p>
+
+<h2>11. Bezpieczeństwo</h2>
+<p>Zapis gry jest weryfikowany sumą kontrolną i ma kopię zapasową, a pliki leżą w prywatnym katalogu aplikacji,
+niedostępnym dla innych aplikacji bez uprawnień administratora telefonu. Podczas rozgrywki zwracaj uwagę
+na otoczenie i ruch uliczny; Gra nie wymaga wchodzenia na drogi ani na tereny prywatne.</p>
+
+<h2>12. Zmiany polityki</h2>
+<p>Politykę możemy zmieniać, np. po dodaniu nowych funkcji (konta, zapis w chmurze, płatności). Aktualna wersja
+jest zawsze pod adresem, pod którym ją czytasz, z datą obowiązywania na górze strony. O istotnych zmianach
+poinformujemy w opisie aktualizacji Gry.</p>
+
+<p class="muted" style="margin-top:2rem">Dokument ma charakter informacyjny i nie jest poradą prawną.
+Pola oznaczone <mark>tak</mark> uzupełnij przed publikacją.</p>
+
+</main>
+</body>
+</html>
